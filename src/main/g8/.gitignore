@@ -1,0 +1,13 @@
+# bloop
+.bloop/
+
+# metals
+/.metals/
+**/project/metals.sbt
+
+# sbt
+/.bsp/
+target/
+
+# macOS
+.DS_Store
