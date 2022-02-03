@@ -1,0 +1,15 @@
+# Workaround to bug in Giter8.
+#
+# Having a
+#   src/main/g8/.gitignore
+# file in your template causes folders to be excluded when expanding the template.
+#
+# It seems te be caused by a bug in the library used to evaluate .gitignore.
+#
+# Details:
+#   https://github.com/foundweekends/giter8/issues/401
+#
+# The workaround is to forcibly include the folder using this .g8ignore file in
+# the root of the template project (not in the root of the template itself).
+
+!project/
